@@ -1,0 +1,121 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #e6e6e6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  block-size: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calculator {
+  inline-size: 70%;
+  max-inline-size: 400px;
+  min-inline-size: 250px;
+  background-color: #1a1a1a;
+  border-radius: 0.5rem;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.calculator .calculator-display {
+  inline-size: 100%;
+  overflow-x: auto;
+  padding-inline: 8px;
+  -webkit-padding-before: 24px;
+          padding-block-start: 24px;
+  -webkit-margin-after: 8px;
+          margin-block-end: 8px;
+  background-color: #333333;
+  border-radius: 0.5rem;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: 1 / 1 / span 1 / span 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 3rem;
+}
+
+.calculator .calculator-keys {
+  display: -ms-grid;
+  display: grid;
+  gap: 8px;
+}
+
+.calculator .calculator-keys button {
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  padding-block: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.calculator .calculator-keys .number, .calculator .calculator-keys [data-action="demical"] {
+  background-color: #333333;
+}
+
+.calculator .calculator-keys .number:hover, .calculator .calculator-keys [data-action="demical"]:hover {
+  background-color: #999999;
+}
+
+.calculator .calculator-keys [data-action="clear"] {
+  background-color: #e67300;
+}
+
+.calculator .calculator-keys [data-action="clear"]:hover {
+  background-color: #ff8c1a;
+}
+
+.calculator .calculator-keys [data-action="calculate"] {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 4 / span 4 / span 1;
+}
+
+.calculator .calculator-keys .operator {
+  background-color: #00cccc;
+}
+
+.calculator .calculator-keys .operator:hover {
+  background-color: cyan;
+}
+/*# sourceMappingURL=main.css.map */
